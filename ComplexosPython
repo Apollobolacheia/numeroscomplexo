@@ -1,0 +1,43 @@
+class  numcomplexo :
+    def  __init__ ( self , com1 , com2 , com3 ):
+        próprio . n1 = com1
+        próprio . n2 = com2
+        próprio . n3 = com3
+
+    def  somar ( self ):
+        soma = próprio . n1 + próprio . n2 + próprio . n3
+        imprimir ( soma )
+
+    def  subtrair ( self ):
+        subtração = self . n1 - próprio . n2 - próprio . n3
+        imprimir ( subtração )
+
+    def  multiplicador ( self ):
+        multiplicacao = self . n1 * próprio . n2 * próprio . n3
+        imprimir ( multiplicação )
+    
+    def  dividir ( self ):
+        divisão = self . n1 / próprio . n2 / próprio . n3
+        imprimir ( divisão )
+
+a = float ( input ( "Qual número será a parte real do primeiro complexo?" ))
+b = float ( input ( "Qual número será a parte imaginária do primeiro número complexo?" ))
+c = float ( input ( "Qual número será a parte real do segundo número complexo?" ))
+d = float ( input ( "Qual número será a parte imaginária do segundo número complexo?" ))
+e = float ( input ( "Qual número será a parte real do terceiro número complexo?" ))
+f = float ( input ( "Qual número será a parte imaginária do terceiro número complexo??" ))
+
+
+com1 = complexo ( a , b )
+com2 = complexo ( c , d )
+com3 = complexo ( e , f )
+
+resultado = numcomplexo ( com1 , com2 , com3 )
+print ( "O resultado da soma é:" )
+print ( resultado . somar ())
+print ( "O resultado da subtração é:" )
+print ( resultado . subtrair ())
+print ( "O resultado da multiplicação é:" )
+print ( resultado . multiplicar ())
+print ( "O resultado da divisão é:" )
+imprimir ( resultado . dividir ())
